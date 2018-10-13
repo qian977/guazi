@@ -196,6 +196,9 @@ header .title{
 	text-align: center;
 	line-height: 56px;
 }
+.position .up .a1:hover,.position .up .a2:hover{
+	background: #179500;
+}
 .position .up .up_a3{
 	width:389px;
 	height:25px;
@@ -208,6 +211,9 @@ header .title{
 	float: left;
 	font-size: 18px;
 	color:#fff;
+}
+.position .up .a3:hover{
+	color:#22ac38;
 }
 /*middle*/
 .position .middle{
@@ -366,6 +372,9 @@ header .title{
 	line-height: 40px;
 	margin:33px auto 5px;
 }
+.down a:hover{
+	background: #179500;
+}
 
 /*ask*/
 .ask{
@@ -376,26 +385,75 @@ header .title{
 .ask .sask{
 	width:1200px;
 	margin:0 auto;
-	background:#ac0;
+	overflow: hidden;
+	padding-bottom: 35px;
 }
 .ask .sask h4{
 	font-size: 24px;
 	color:#49506b;
 	font-weight: 100;
-	margin-top:20px;
+	margin-top:33px;
+	margin-bottom: 40px;
 	line-height: 48px;
 	text-align: center;
 	background: url(../img/lvbj.png) no-repeat center bottom;
 }
 .ask .sask li{
+	width:500px;
+	height:190px;
+	overflow: hidden;
+	margin-left:35px;
+	margin-right: 60px;
+	float: left;
+}
+.ask .sask li .toux{
 	width:60px;
 	height: 60px;
 	background: url(../img/icon.4cc0b104c88b9d992a15d4cf86eab6a9.png);
 	background-position:-130px -220px;
+	float: left;
+	margin-right: 15px;
 }
-
-
-
+.ask .sask li:nth-of-type(2) .toux{
+	background-position:-190px -220px;
+}
+.ask .sask li:nth-of-type(3) .toux{
+	background-position:-250px -220px;
+}
+.ask .sask li:nth-of-type(4) .toux{
+	background-position:-310px -220px;
+}
+.ask .sask li .qust{
+	width:244px;
+	height:36px;
+	background: #ebebeb;
+	border-radius: 4px;
+	font-size: 16px;
+	color:#495056;
+	line-height: 36px;
+	text-align: center;
+	float: left;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top:13px;
+}
+.ask .sask li .qust i{
+	float: left;
+	width:0;
+	height:0;
+	border:5px solid transparent;
+	border-right-color:#ebebeb;
+	position: absolute;
+	left:-10px;
+	top:13px;
+}
+.ask .sask li .answer{
+	width:425px;
+	float: left;
+	line-height: 30px;
+	font-size: 14px;
+	color: #a5abb2;
+}
 
 
 
