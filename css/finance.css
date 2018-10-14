@@ -1,0 +1,172 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea img{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+img{
+	display: block;
+}
+body{
+	/*position: relative;*/
+	font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+
+/*header*/
+header #head{
+	overflow: hidden;
+	background: url(../img/banner.5355155850faa0c33e6316a71c94c6d9.png) no-repeat;
+	background-size:cover;
+	background-position:50%;
+	width:100%;
+	height:421px;
+}
+header .title img{
+	width:64px;
+	height:64px;
+}
+header .title{
+	position: absolute;
+	left:112px;
+	top:0px;
+}
+.title #uls{
+	overflow-y: auto;
+	width:767px;
+	height:386px;
+	background:#fff;
+	border:1px solid #e6e6e6;
+	padding-top:18px;
+	position: absolute;
+	left:79px;
+	top:52px;
+	z-index: 2;
+	display: none;
+}
+.title #uls ul{
+	white-space: wrap;
+	overflow:hidden;
+	height:56px;
+	border-bottom: 1px dashed #e6e6e6;
+}
+.title #uls ul:first-child{
+	border-bottom: 1px solid #e6e6e6;
+}
+.title #uls li a{
+	float: left;
+	font-size:14px;
+	line-height: 56px;
+	color:#495056;
+	margin-left: 12px;
+	margin-right:12px;
+}
+.title #uls li a:hover{
+	color:#22ac38;
+}
+.title #uls .re1{
+	float: left;
+	color:#22ac38;
+	font-size:14px;
+	line-height: 56px;
+	margin-left: 17px;
+	margin-right:12px;
+}
+.title #uls .re{
+	float: left;
+	font-size:14px;
+	line-height: 56px;
+	margin-left: 17px;
+	margin-right:12px;
+}
+.title a{
+	color: #333333;
+	font-size: 14px;
+	float: left;
+	margin-right: 53px;
+	line-height: 52px;
+	margin-top:11px;
+}
+.title a:nth-of-type(1){
+	margin:0;
+}
+.title #deng{
+	margin-right: 20px;
+}
+.title #huabj{
+	overflow: hidden;
+	width:73px;
+	height:34px;
+	margin:21px 172px 0 15px;
+	float: left;
+	text-align: center;
+}
+.title #bj{
+	color:#333333;
+	font-size: 14px;
+	width:73px;
+	height:34px;
+	line-height:34px;
+	cursor:pointer;
+}
+.title a:hover{
+	color: #39b34c;
+}
+.title .denglu{
+	/*background: url(img/denglu.png) no-repeat left center;
+	background-position: 0px 0px;*/
+}
+.title .span{
+	display: block;
+	color: #22ac38;
+	margin-top:29px;
+	float: right;
+	font-size: 23px;
+	line-height: 15px;
+	font-weight: 600;
+	border-left: 1px solid #333333;
+	padding-left:25px;
+}
+header .apply{
+	width:274px;
+	background: pink;
+	padding:20px;
+}
+header .apply h4{
+    height: 34px;
+    overflow: hidden;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight:100;
+    color: #666;
+}
+header .apply h4 span{
+    padding-left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+header .apply .input1{
+    height: 50px;
+    background: cornflowerblue;
+    position: relative;
+}
+header .apply .input1 input{
+	width: 252px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+}
+header .apply .input1 a{
+	font-size:14px;
+	color:#999999;
+	position:absolute;
+	right:10px;
+	top:9px;
+}

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title></title>
+<title>首页</title>
 <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
@@ -140,11 +140,11 @@
 			</div>
 			</div>		
 					
-			<a href="">首页</a>
+			<a href="index.html" target="_self">首页</a>
 			<a href="">我要买车</a>
-			<a href="">我要卖车</a>
-			<a href="">瓜子服务</a>
-			<a href="">瓜子金融</a>
+			<a href="sellcar.html" target="_self">我要卖车</a>
+			<a href="service.html" target="_self">瓜子服务</a>
+			<a href="finance.html" target="_self">瓜子金融</a>
 			<a href="">毛豆新车</a>
 			<a href="" id="deng">登录</a>
 			<span class="span">400-069-6527</span>
@@ -156,7 +156,7 @@
 		<div class="left">
 			<div class="tit">
 				<h4><a href="">我要买车 &gt;</a></h4>  
-				<input type="text" value="搜索您想要的车"/><a href=""></a>
+				<input type="text" value="" placeholder="搜索您想要的车"/><a href=""></a>
 			</div>
 			<table>
 				<tr>
@@ -193,7 +193,7 @@
 				<h4><a href="">我要卖车 &gt;</a></h4>
 				<p>已有<span>多少</span>人申请提交</p>
 			</div>		
-			<input type="text" value="请输入您的手机号"/>
+			<input type="text" value="" placeholder="请输入您的手机号"/>
 			<div class="aa">
 				<a href="">我要卖车</a> <a href="">免费估价</a>
 			</div>
@@ -613,7 +613,17 @@ window.onload=function(){
 		$("#see").style.display="none";
 	}
 	
-	$("#fix6").scrollTop(1000);
-	
+
 }
+
+////$("#fix6").scrollTop(1000);
+
+//window.onscroll=function(){
+//	let scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+//	if(scrollTop>=424){
+//		$("#fix #fix6").animate({
+//			opacity=1;
+//		},500);
+//	}
+//}
 </script>					
