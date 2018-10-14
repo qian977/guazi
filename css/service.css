@@ -40,6 +40,7 @@ header .title{
 	height:386px;
 	background:#fff;
 	border:1px solid #e6e6e6;
+	border-top:none;
 	padding-top:18px;
 	position: absolute;
 	left:79px;
@@ -215,25 +216,43 @@ header .title{
 }
 
 /*afterSale*/
+.afterSale{
+	
+}
 .afterSale img{
 	width:100%;
 	height: auto;
 }
+.afterSale .bigcon{
+	width:1200px;
+	margin:0 auto;
+	position: relative;
+}
 .afterSale .con{
 	width:1200px;
-	background: pink;
+	overflow: hidden;
+	position: absolute;
+	left:0px;
+	top:-403px;
 }
 .afterSale .con .txt{
 	width:630px;
-	background: blue;
     color: #fff;
+    float: right;
 }
 .afterSale .con .txt h3{
     font-size: 40px;
     font-weight: bold;
     position: relative;
     line-height: 37px;
-    margin-bottom: 15%;
+}
+.afterSale .con .txt .line{
+	width:51px;
+	height: 6px;
+	background: #fff;
+	border-radius: 5px;
+	margin-top:21px;
+    margin-bottom:66px;
 }
 .afterSale .con .txt ul{
 	overflow: hidden;
@@ -253,6 +272,106 @@ header .title{
     line-height: 30px;
     font-size: 15px;
     opacity: .6;
+}
+
+/*peit*/
+div.peit{
+	width:100%;
+	height: 417px;
+	background: #24c488;
+	color: #fff;
+	overflow: hidden;
+}
+div.peit h3{
+	font-size: 40px;
+	text-align: center;
+	margin-top:96px;
+	margin-bottom:55px;
+}
+div.peit ul{
+	width: 1200px;
+	margin:0 auto;
+	overflow: hidden;
+}
+div.peit li{
+	width:300px;
+	float:left;
+	text-align: center;
+}
+div.peit li img{
+	margin:0 auto 37px;
+}
+div.peit li span{
+	font-size: 15px;
+	margin-top:37px;
+}
+
+/*question*/
+.bigquestion{
+	
+}
+.question{
+	width:1000px;
+	margin:0 auto;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.question h4{
+	text-align: center;
+    font-size: 40px;
+    color: #232e33;
+    padding: 50px 0 55px 0;
+    line-height: 40px;
+}
+.question_left{
+	width:449px;
+	margin-right: 102px;
+	float: left;
+}
+.question ul{
+	overflow: hidden;
+}
+.question li{
+	width:449px;
+    float: left;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e8f0ea;
+}
+.question li span{
+	width:25px;
+	height: 22px;
+	float: left;
+	margin-right: 15px;
+	background: url(../img/guarantee.cd503887e1e1ecc72a0041e01be69e20.png) no-repeat;
+	background-position:-2px -132px;
+	background-size:62.5px 161px;
+}
+.question li .tit{
+	color: #58aa5c;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 22px;
+    vertical-align: top;
+    float: left;
+	margin-bottom: 15px;
+}
+.question li .content{
+	float: left;
+    color: #586067;
+    font-size: 14px;
+    line-height: 27px;
+    padding-bottom: 20px;
+}
+.question .seemore{
+	float: left;
+    color: #62bc66;
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 30px;
+}
+.question_right{
+	width:449px;
+	float: left;
 }
 
 
