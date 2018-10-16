@@ -21,16 +21,17 @@ ul,li{
 
 /*header*/
 header{
-	height:416px;
+	width: 100%;
+	overflow: hidden;
 }
 header #head{
+	width: 100%;
 	height:416px;
 }
 header #head img{
-	width:auto;
-	height:416px;
+	width:100%;
+	height:100%;
 }
-
 header .title img{
 	width:64px;
 	height:64px;
@@ -139,6 +140,130 @@ header .title{
 }
 
 
+/*signIn*/
+.signIn{
+	width:100%;
+	height:100%;
+	background: #000;
+	opacity: .8;
+	position: absolute;
+	left:0;
+	top:0;
+	display: none;
+	z-index: 3;
+}
+.sign_box{
+	width:794px;
+	height: 424px;
+	background: #fff;
+	border:3px solid #d8dde5;
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	display: none;
+	z-index: 3;
+}
+.sign_box h3{
+	font-size: 24px;
+	font-weight: 100;
+	color:#495056;
+	text-align: center;
+	margin-top:26px;
+	margin-bottom:40px;
+}
+.sign_box .con{
+	width:545px;
+	margin:0 auto;
+}
+.sign_box .con .phoneNum{
+	width:421px;
+	height:42px;
+	border:1px solid #bec6ce;
+	border-radius: 3px;
+	text-indent: 15px;
+	margin-bottom: 12px;
+}
+.sign_box .con span{
+	font-size: 16px;
+	color:#495056;
+	margin-right: 36px;
+	margin-top:13px;
+	float: left;
+}
+.sign_box .con .input2 span{
+	margin-left:18px;
+}
+.sign_box .con .input2{
+	overflow: hidden;
+}
+.sign_box .con .yan{
+	float: left;
+	width:262px;
+	height:42px;
+	border:1px solid #bec6ce;
+	border-radius: 3px;
+	text-indent: 15px;
+}
+.sign_box .con  .input2 a{
+	float: left;
+	margin-left:8px;
+	width:150px;
+	height: 44px;
+	background: #22ac38;
+	border-radius: 3px;
+	text-align: center;
+	line-height:42px;
+	font-size: 16px;
+	color:#fff;
+}
+.sign_box .con .input2 a:hover{
+	background: #179500;
+}
+.sign_box .dl{
+	display: block;
+	width:410px;
+	height: 50px;
+	background: #22ac38;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 3px;
+	font-size: 20px;
+	color:#fff;
+	margin:0 auto 20px;
+}
+.sign_box .mianf{
+	font-size: 22px;
+	color:#22ac38;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.sign_box .last{
+	font-size: 12px;
+	color:#b7b7c0;
+	text-align: center;
+}
+.sign_box .last span{
+	color:#22ac38;
+}
+.sign_box .close{
+	font-size: 40px;
+	color:#bec6ce;
+	position: absolute;
+	right:20px;
+	top:0px;
+}
+.sign_box .true{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff7e00;
+}
+
+
 /*logo*/
 .logo{
 	width:1202px;
@@ -208,9 +333,13 @@ table tr td a:hover{
 }
 .right .tit2 p{
 	float: right;
-	margin-top: 38px;
+	margin-top: 30px;
 	color: #a8abae;
 	font-size: 13px;
+}
+.right .tit2 p span{
+	font-size:24px;
+	color:#3cb46d;
 }
 .right input{
 	width:370px;
@@ -356,6 +485,10 @@ section .con .img2{
 }
 
 /*contract*/
+#cont-box{
+	width: 100%;
+	overflow: hidden;
+}
 #cont{
 	height:400px;
 }
@@ -405,9 +538,6 @@ section .con .img2{
 	float: left;
 	margin-right: 20px;
 }
-/*.contract .left .yy:hover{
-	color:#39b34c;
-}*/
 .contract .left .yy .img{	
 	width:42px;
 	height:42px;
@@ -733,10 +863,7 @@ footer .foot span:nth-of-type(2){
 }
 .fix .fix6{
 	background-position: -53px -213px;
-	opacity: 0;
-}
-#bigfix5{
-	
+	display: none;
 }
 .fix .fix1:hover{
 	background-color: #3f4251;

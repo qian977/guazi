@@ -419,24 +419,12 @@
 window.onload=function(){
 	
 	//划过显示ul:
-//	$("#huabj").onmouseover=function(){
-//		this.style.cssText="background-color:#fff;border:1px solid #e6e6e6;border-bottom:none;border-radius:2px;";
-//		$("#bj").style.cssText="color:#39b34c;";
-//		$("#uls").style.display="block";
-//	}
-//	$("#huabj").onmouseout =function(){
-//		this.style.cssText="width:75px;";	
-//		$("#bj").style.cssText="color:#333;";
-//		$("#uls").style.display="none";	
-//	}
-
-
 	$("#huabj").mouseenter(function(){
 		$(this).css({
 			"backgroundColor":"#fff",
 			"border":"1px solid #e6e6e6",
 			"borderBottom":"none",
-			"border-radius":"2px"
+			"borderRadius":"2px"
 		});
 		$("#bj").css({
 			"color":"#39b34c"
@@ -452,6 +440,9 @@ window.onload=function(){
 		});
 		$("#uls").hide();
 	}); 
+	
+	
+//	signIn
 
 //	二维码fixed
 	$(".fixed").hover(
