@@ -139,7 +139,7 @@
 			</div>		
 					
 			<a href="index.html" target="_self">首页</a>
-			<a href="">我要买车</a>
+			<a href="buycar.html">我要买车</a>
 			<a href="sellcar.html" target="_self">我要卖车</a>
 			<a href="service.html" target="_self">瓜子服务</a>
 			<a href="finance.html" target="_self">瓜子金融</a>
@@ -148,6 +148,27 @@
 			<span class="span">400-069-6527</span>
 		</div>
 	</header>
+	
+	<!--signIn-->
+	<div class="signIn"></div>
+	<div class="sign_box">
+		<h3>瓜子二手车直卖网</h3>
+		<div class="con">
+			<div class="input1">
+				<span>手机号码</span><input id="phoneNum" class="phoneNum" type="text" placeholder="请输入您的手机号码"/>
+			</div>
+			<div class="input2">
+				<span>验证码</span><input id="yan" class="yan" type="text" placeholder="请输入验证码"/><a id="getn" href="javascript:;">获取验证码</a>
+			</div>
+			
+		</div>	
+		<p id="true" class="true"></p>
+		<a id="dl" class="dl" href="javascript:;">登录</a>
+		<p class="mianf">免费咨询400-069-6527</p>
+		<p class="last">登录即视为同意<span>《用户使用协议》</span>及<span>《隐私权条款》</span></p>
+		<a class="close" href="">×</a>
+	</div>
+	
 	
 	<!--工具栏-->
 	<!--fixed-->
@@ -210,7 +231,7 @@
 		<ul>
 			<li>
 				<span>品牌</span>
-				<a href="">不限</a>
+				<a class="first" href="">不限</a>
 				<a href="">大众</a>
 				<a href="">奔驰</a>
 				<a href="">宝马</a>
@@ -225,13 +246,788 @@
 				<a href="">雪佛兰</a>
 				<a href="">哈弗</a>
 				<a href="">马自达</a>
-				<a href="">全部</a>
+				<a href="" class="both">全部</a>
 			</li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<li>
+				<span>车系</span>
+				<a class="first" href="">不限</a>
+				<a href="">大众</a>
+				<a href="">奔驰</a>
+				<a href="">宝马</a>
+				<a href="">奥迪</a>
+				<a href="">别克</a>
+				<a href="">丰田</a>
+				<a href="">现代</a>
+				<a href="">福特</a>
+				<a href="">本田</a>
+				<a href="">日产</a>
+				<a href="">长安</a>
+				<a href="">雪佛兰</a>
+				<a href="">哈弗</a>
+				<a href="">马自达</a>
+			</li>
+			<li>
+				<span>价格</span>
+				<a class="first" href="">不限</a>
+				<a href="">3万以下</a>
+				<a href="">3-5万</a>
+				<a href="">5-7万</a>
+				<a href="">7-9万</a>
+				<a href="">9-12万</a>
+				<a href="">12-16万</a>
+				<a href="">16-20万</a>
+				<a href="">20万以上</a>
+				<div class="diy">
+					<input class="input1" type="text" />
+					-
+					<input class="input2" type="text" />
+					万
+					<a href="">确定</a>
+				</div>
+				
+			</li>
+			<li>
+				<span>更多</span>
+				<select name="">
+					<option value="">车龄</option>
+				</select>
+				<select name="">
+					<option value="">变速箱</option>
+				</select>
+				<select name="">
+					<option value="">车型</option>
+				</select>
+				<select name="">
+					<option value="">里程</option>
+				</select>
+				<select name="">
+					<option value="">排量</option>
+				</select>
+				<select name="">
+					<option value="">排放标准</option>
+				</select>
+				<select name="">
+					<option value="">座位数</option>
+				</select>
+				<select name="">
+					<option value="">燃油类型</option>
+				</select>
+				<select name="">
+					<option value="">颜色</option>
+				</select>
+				<select class="lat" name="">
+					<option value="">车牌所在地</option>
+				</select>
+				<a class="both2" href="">全部</a>
+			</li>
 		</ul>
 	</div>
+
+	<p class="p">在“北京二手车”中为您找到15080辆好车</p>
+	
+	<!--list-->
+	<div class="list">
+		<div class="tit">
+			<h3>全部  | 付三成 | 严选车</h3>
+			<p>
+				<a href="">默认排序</a>
+				<a href="">最新发布</a>
+				<a href="">价格 ↑</a>
+				<a href="">车龄 ↑</a>
+				<a href="">里程 ↑</a>
+				<select name="">
+					<option value="">热门筛选</option>
+				</select>
+			</p>
+		</div>
+		<ul>
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li>
+				<img src="img/0faa96dd10c2d9e9be92500981300d7e.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img src="img/qn180909140718b1182cd7f485652a26a90ad3d1596656.jpg" alt=""/>
+				<div class="tt">
+					<h5>现代 索纳塔A6L 2010款 2.0 TFSI 自动标准</h5>
+					<p>2013年 | 8.1万公里</p>
+					<div class="money">12.44<span>万</span>
+						<span>22.80万</span>
+						<div class="aa">
+							<a class="yxc" href="">严选车</a>
+							<a class="cz" href="">超值</a>
+						</div>
+					</div>
+				</div>
+			</li>	
+		</ul>
+	</div>
+
+	<!--page-->
+	<div class="page">
+		<a class="before" href="">&lt; 上一页</a>
+		<a href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">7</a>
+		<a href="">8</a>
+		&nbsp;&nbsp;...&nbsp;&nbsp;
+		<a class="after" href="">下一页 &gt;</a>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<div class="up">
+			<div class="toum"></div>
+			<div class="zi1">
+				<p><span>咨询电话：400-069-6527</span> （周一至周日 8:00-21:00）</p> 
+				<p><span>服务监督热线： 400-066-8780</span> （周一至周日 9:00-21:00）</p>
+				<p>互联网违法或不良信息举报联系方式：</p>
+				<p><span>邮箱： jubao@guazi.com</span> 电话：010-89191670</p>
+			</div>
+			<div class="vx"><img src="img/ewm-wx-2.png" alt=""/><span>关注微信</span></div>
+			<div class="app"><img src="img/o_webfcp.caad0950e5362132716c5f8f64b97376.png" alt=""/><span>下载APP</span></div>
+			<div class="zi2">
+				<a href="">关于瓜子</a>
+				<a href="">加入我们</a>
+				<a href="">联系我们</a>
+				<a href="">服务保障</a>
+				<a href="">隐私声明</a>
+				<a href="">服务条款</a>
+				<a href="">营业执照</a>
+				<p class="p1">Copyright 2018 www.guazi.com All Rights Reserved</p>
+				<p class="p2">京ICP备15053955号 ICP证151071号</p>
+				<a href=""><img src="img/huiz.png" alt=""/>京公网安备11010802020161号</a>
+			</div>
+		</div>
+		
+		<p class="rem">
+			<span>热门品牌：</span>
+			<a href="">北京二手大众</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+		</p>
+		<p class="rem">
+			<span>热门品牌：</span>
+			<a href="">北京二手大众</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+		</p>
+		<p class="rem">
+			<span>热门品牌：</span>
+			<a href="">北京二手大众</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+		</p>
+		<p class="rem">
+			<span>热门品牌：</span>
+			<a href="">北京二手大众</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+		</p>
+		<p class="rem">
+			<span>热门品牌：</span>
+			<a href="">北京二手大众</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+		</p>
+		<p class="rem">
+			<span>热门品牌：</span>
+			<a href="">北京二手大众</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+			<a href="">北京二手奔驰</a>
+			<a href="">北京二手宝马</a>
+			<a href="">北京二手奥迪</a>
+			<a href="">北京二手别克</a>
+		</p>
+		<p class="foot">
+			<span>车好多旧机动车经纪（北京）有限公司</span>
+			<span>北京市顺义区南法信镇政府西侧(北京市旧机动车交易市场有限公司顺义分市场院内A区01号)</span>
+			<span>010-57317000</span>
+		</p>
+		     
+	</footer>
 
 </body>
 </html>
@@ -239,6 +1035,42 @@
 <script type="text/javascript" src="js/tools.js"></script>
 <script type="text/javascript" src="js/slider.js" ></script>
 <script type="text/javascript">
+window.onload=function(){
+	//	登录手机号验证
+	z("#getn").onclick=function(){
+		if(z("#phoneNum").value==""){
+			z("#true").innerHTML="请输入手机号";
+		}else{
+			let num=/^1\d{10}$/;
+			if(num.test(z("#phoneNum").value)==true){
+				z("#true").innerHTML=" ";
+			}else{
+				z("#true").innerHTML="请输入正确的手机号码";
+			}
+		}	
+	};
+	
+	z("#dl").onclick=function(){
+		if(z("#phoneNum").value==""){
+			z("#true").innerHTML="请输入手机号";
+		}else{
+			let num=/^1\d{10}$/;
+			if(num.test(z("#phoneNum").value)==true){
+				z("#true").innerHTML=" ";
+				
+				let yanz=/^\d{4}$/;
+				if(yanz.test(z("#yan").value)==true){
+					z("#true").innerHTML="";
+				}else{
+					z("#true").innerHTML="请输入验证码";
+				}
+			}else{
+				z("#true").innerHTML="请输入正确的手机号码";
+			}				
+		}		
+	};
+}
+
 $(function(){	
 	//划过显示ul:
 	$("#huabj").mouseenter(function(){

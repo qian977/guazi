@@ -378,6 +378,138 @@ table tr td a:hover{
 }
 
 
+/*guaJia*/
+.guaJia{
+	width:100%;
+	height:100%;
+	background: #000;
+	opacity: .8;
+	position: absolute;
+	left:0;
+	top:0;
+	/*display: none;*/
+	z-index: 3;
+}
+.guaJia_box{
+	width:794px;
+	height: 550px;
+	background: #fff;
+	border:3px solid #d8dde5;
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	/*display: none;*/
+	z-index: 3;
+}
+.guaJia_box h3{
+	font-size: 24px;
+	font-weight: 100;
+	color:#495056;
+	text-align: center;
+	margin-top:26px;
+	margin-bottom:40px;
+}
+.guaJia_box .guaJia_con{
+	/*width:545px;*/
+	margin:0 auto;
+}
+.guaJia_box .guaJia_con p{
+	height: 54px;
+}
+.guaJia_box .guaJia_con p span{
+	width:72px;
+	font-size: 18px;
+	color:#495056;
+	float: left;
+	margin-right: 40px;
+}
+.guaJia_box .guaJia_con p select{	
+	border:1px solid #bec6ce;
+	border-radius: 4px;
+	height: 40px;
+}
+.guaJia_box .guaJia_con p input{
+	width:521px;
+	height: 40px;
+	border:1px solid #bec6ce;
+	border-radius: 4px;
+}
+.guaJia_box .guaJia_con .p1 select:nth-of-type(1){
+	width:256px;
+	margin-right: 4px;
+}
+.guaJia_box .guaJia_con .p1 select:nth-of-type(2){
+	width:256px;
+	background: #f8f8f8;
+}
+.guaJia_box .guaJia_con .p2 select:nth-of-type(1){
+	width:124px;
+	margin-right: 4px;
+}
+.guaJia_box .guaJia_con .p2 select:nth-of-type(2){
+	width:124px;
+	background: #f8f8f8;	
+	margin-right: 4px;
+}
+.guaJia_box .guaJia_con .p2 select:nth-of-type(3){
+	width:256px;
+	background: #f8f8f8;
+}
+.guaJia_box .guaJia_con .p3 select{
+	width:256px;
+	background: #f8f8f8;
+}
+.guaJia_box .guaJia_con .p3 select:nth-of-type(1){
+	width:256px;
+	background: #f8f8f8;
+	margin-right: 4px;
+}
+.guaJia_box .guaJia_con .p4{
+	position: relative;
+}
+.guaJia_box .guaJia_con .p4 em{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	color:#495056;
+	position: absolute;
+	right:0px;
+	top:0px;
+}
+.guaJia_box .gj{
+	display: block;
+	width:410px;
+	height: 50px;
+	background: #22ac38;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 3px;
+	font-size: 20px;
+	color:#fff;
+	margin:0 auto 20px;
+}
+.guaJia_box .mianf{
+	font-size: 22px;
+	color:#22ac38;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.guaJia_box .close{
+	font-size: 40px;
+	color:#bec6ce;
+	position: absolute;
+	right:20px;
+	top:0px;
+}
+
+
+
+
+
+/*section*/
 section{
 	background: #f5f5f7;
 	padding-top:233px;
