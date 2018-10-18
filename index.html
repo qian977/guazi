@@ -156,7 +156,7 @@
 		<h3>瓜子二手车直卖网</h3>
 		<div class="con">
 			<div class="input1">
-				<span>手机号码</span><input id="phoneNum" class="phoneNum" type="text" placeholder="请输入您的手机号码"/>
+				<span>手机号码</span><input name="phoneNum" id="phoneNum" class="phoneNum" type="text" placeholder="请输入您的手机号码"/>
 			</div>
 			<div class="input2">
 				<span>验证码</span><input id="yan" class="yan" type="text" placeholder="请输入验证码"/><a id="getn" href="javascript:;">获取验证码</a>
@@ -167,7 +167,7 @@
 		<a id="dl" class="dl" href="javascript:;">登录</a>
 		<p class="mianf">免费咨询400-069-6527</p>
 		<p class="last">登录即视为同意<span>《用户使用协议》</span>及<span>《隐私权条款》</span></p>
-		<a class="close" href="">×</a>
+		<p class="close">×</p>
 	</div>
 	
 	<!-- logo -->
@@ -212,9 +212,9 @@
 				<h4><a href="sellcar.html">我要卖车 &gt;</a></h4>
 				<p>已有<span>50736485</span>人申请提交</p>
 			</div>		
-			<input type="text" value="" placeholder="请输入您的手机号"/>
+			<input maxlength="11" value="" placeholder="请输入您的手机号"/>
 			<div class="aa">
-				<a href="">我要卖车</a> <a href="">免费估价</a>
+				<a class="sell" href="javascript::">我要卖车</a> <a id="bggj" href="javascript:;">免费估价</a>
 			</div>
 		</div>
 	</div>
@@ -262,14 +262,13 @@
 			</p>
 			<p class="p5">
 				<span>接受手机</span>
-				<input type="text" placeholder="请输入您的手机号"/>
+				<input id="p5_input" type="text" placeholder="请输入您的手机号"/>
 			</p>					
 		</div>
-		
-		<a id="dl" class="gj" href="javascript:;">开始估价</a>
+		<p id="true2" class="true2"></p>
+		<a id="gj" class="gj" href="javascript:;">开始估价</a>
 		<p class="mianf">免费咨询400-069-6527</p>
-
-		<a class="close" href="">×</a>
+		<p class="close2">×</p>
 	</div>
 
 	<!-- section -->
@@ -316,7 +315,7 @@
 			</div>
 
 			<div class="con">
-				<img class="img1" src="img/fb483bb5f39eb948ae73d23ee8e0674f.png" alt=""/>
+				<img class="img1 img1_img" src="img/fb483bb5f39eb948ae73d23ee8e0674f.png" alt=""/>
 
 				<div class="box1">
 					<img src="img/1fab5316dfd667e31e937259d484c992.png" alt=""/>
@@ -451,13 +450,13 @@
 				</div>
 			</div>			
 		</div>
-		<a class="more" href="">更多猜您喜欢<img src="img/yjt.jpg" alt="" /></a>
+		<a class="more" href="buycar.html">更多猜您喜欢<img src="img/yjt.jpg" alt="" /></a>
 		<div class="blast">
 			<div class="last">
 				<div class="bimg">
 					<p>免费咨询电话：400-023-1529</p>
 				</div>
-				<a href="">我要买车</a> <a href="sellcar.html">我要卖车</a>
+				<a href="buycar.html">我要买车</a> <a href="sellcar.html">我要卖车</a>
 			</div>
 		</div>	
 	</div>
@@ -624,7 +623,7 @@ window.onload=function(){
 	
 	let s2 = new Slider($("#cont"),100,100,["img/buy-step-order.jpg","img/buy-step-see.jpg","img/buy-step-contract.jpg","img/buy-step-deal.jpg"],10,"transparents","transparents",true,-1,2000);
 	
-	//	登录手机号验证
+	//signIn登录手机号验证
 	z("#getn").onclick=function(){
 		if(z("#phoneNum").value==""){
 			z("#true").innerHTML="请输入手机号";
@@ -636,8 +635,7 @@ window.onload=function(){
 				z("#true").innerHTML="请输入正确的手机号码";
 			}
 		}	
-	};
-	
+	};	
 	z("#dl").onclick=function(){
 		if(z("#phoneNum").value==""){
 			z("#true").innerHTML="请输入手机号";
@@ -656,6 +654,20 @@ window.onload=function(){
 				z("#true").innerHTML="请输入正确的手机号码";
 			}				
 		}		
+	};
+	
+	//guaJia免费评估手机号验证
+	z("#gj").onclick=function(){
+		if(z("#p5_input").value==""){
+			z("#true2").innerHTML="请输入手机号";
+		}else{
+			let num2=/^1\d{10}$/;
+			if(num2.test(z("#p5_input").value)==true){
+				z("#true2").innerHTML=" ";
+			}else{
+				z("#true2").innerHTML="请输入正确的手机号码";
+			}
+		}	
 	};
 }
 
@@ -692,6 +704,25 @@ $(function(){
 		$(".signIn").show();
 		$(".sign_box").show();
 	});
+	$(".close").click(function(){
+		$("body").css({"overflow":"visible","overflowY":"visible"});
+		$(".signIn").hide();
+		$(".sign_box").hide();
+	});
+
+
+	//点击免费评估:
+	$("#bggj").click(function(){
+		$("body").css({"overflow":"scroll","overflowY":"hidden"});
+		$(".guaJia").show();
+		$(".guaJia_box").show();
+	});
+	$(".close2").click(function(){
+		$("body").css({"overflow":"visible","overflowY":"visible"});
+		$(".guaJia").hide();
+		$(".guaJia_box").hide();
+	});
+
 	
 	//滑过固定工具栏：
 	$("#fix1").mouseover(function(){
@@ -730,7 +761,7 @@ $(function(){
 	});
 	
 //	回到顶部:
-	$(window).scroll(function(){	
+	$(window).scroll(function(){
 		var $scrolls=document.documentElement.scrollTop || document.body.scrollTop;
 		if($scrolls>=402){
 			$(".fix .fix6").css({"display":"block"});		
@@ -742,6 +773,87 @@ $(function(){
 		}			
 	});
 	
-});
+//	logo中我要卖车的input
+	$(".logo .right input").focus(function(){
+		$(this).css({
+			"backgroundColor":"#fff",
+			"border":"1px solid #e5e5e5"
+		});
+	});
+	$(".logo .right input").blur(function(){
+		$(this).css({
+			"backgroundColor":"#f5f5f7",
+			"border":"1px solid transparent"
+		});
+	});	
+//logo中我要卖车的input	规定输入内容：
+	$(".logo .right input").keyup(function(){
+		let n=/[0-9]/;
+		if(n.test($(this).val())==false){
+			$(this).val("");
+		}
+	});
+	
+//	点击我要卖车的按钮
+	let a=$(".logo .right input");
+	$(".logo .right .sell").click(function(){
+		if(a.val("")){
+			a.css({
+				"border":"1px solid #f76367",
+				"backgroundColor":"#fff6f6",
+				"color":"#f76367",
+				"fontSize":"16px",
+				"textIndent":"227px"
+			});
+			a.val("请输入手机号码");
+		}		
+	});
+		
+	$(".logo .right input").focus(function(){
+		$(this).css({
+			"backgroundColor":"#fff",
+			"border":"1px solid #e5e5e5",
+			"fontSize":"13px",
+			"textIndent":"26px",
+			"color":"#495056"
+		});
+		a.val("");
+	});
+	
+	
+//	box1商品滑过和跳转
+//	$("section .con .box1").mouseenter(function(){
+//			$(this).css({"boxShadow":"0px 0px 10px 2px #ccc"});
+//	});
+//	$("section .con .box1").mouseleave(function(){
+//			$(this).css({"boxShadow":"0"});
+//	});
+		
+	$("section .con .box1").click(function(){
+		window.open("buycar.html");
+	});
+	$("section .con .box2").click(function(){
+		window.open("buycar.html");
+	});
+	$("section .con .box3").click(function(){
+		window.open("buycar.html");
+	});
 
+	$("section .bg .img1_img").click(function(){
+		window.open("finance.html");
+	});
+
+
+//	商品列表点击打开
+	$(".list .ul .li img").click(function(){
+		window.open("shopdetails.html");
+	});
+	
+	
+	
+	
+	
+	
+
+});
 </script>					
