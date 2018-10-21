@@ -7,7 +7,7 @@
 </head>
 <body>
 	<!--header-->
-	<header>	
+	<header>
 		<div id="head"><!--轮播图--></div>
 		
 		<div class="title">
@@ -616,6 +616,7 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/tools.js"></script>
 <script type="text/javascript" src="js/slider.js" ></script>
+<!--<script type="text/javascript" src="js/public.js" ></script>-->
 <script type="text/javascript">
 window.onload=function(){
 //	header 轮播图:
@@ -672,32 +673,32 @@ window.onload=function(){
 }
 
 $(function(){	
-	//划过显示ul:
-	$("#huabj").mouseenter(function(){
-		$(this).css({
-			"backgroundColor":"#fff",
-			"border":"1px solid #e6e6e6",
-			"borderBottom":"none",
-			"borderRadius":"2px"
-		});
-		$("#bj").css({
-			"color":"#39b34c"
-		});
-		$("#uls").show();
-	});
-	$("#huabj").mouseleave(function(){
-		$(this).css({
-			"backgroundColor":"transparent",
-			"border":"1px solid transparent",
-			"borderBottom":"none",
-			"borderRadius":"2px"
-		});
-		$("#bj").css({
-			"color":"#fff"
-		});
-		$("#uls").hide();
-	});
-	
+//	//划过显示ul:
+//	$("#huabj").mouseenter(function(){
+//		$(this).css({
+//			"backgroundColor":"#fff",
+//			"border":"1px solid #e6e6e6",
+//			"borderBottom":"none",
+//			"borderRadius":"2px"
+//		});
+//		$("#bj").css({
+//			"color":"#39b34c"
+//		});
+//		$("#uls").show();
+//	});
+//	$("#huabj").mouseleave(function(){
+//		$(this).css({
+//			"backgroundColor":"transparent",
+//			"border":"1px solid transparent",
+//			"borderBottom":"none",
+//			"borderRadius":"2px"
+//		});
+//		$("#bj").css({
+//			"color":"#fff"
+//		});
+//		$("#uls").hide();
+//	});
+//	
 	//点击登录signIn
 	$("#deng").click(function(){
 		$("body").css({"overflow":"scroll","overflowY":"hidden"});
@@ -724,54 +725,54 @@ $(function(){
 	});
 
 	
-	//滑过固定工具栏：
-	$("#fix1").mouseover(function(){
-		$("#download1").css({"display":"block"});
-	});
-	$("#fix1").mouseout(function(){
-		$("#download1").css({"display":"none"});
-	});
-
-	$("#fix2").mouseover(function(){
-		$("#download2").css({"display":"block"});
-	});
-	$("#fix2").mouseout(function(){
-		$("#download2").css({"display":"none"});
-	});
-
-	$("#fix3").mouseover(function(){
-		$("#yjfk").css({"display":"block"});
-	});
-	$("#fix3").mouseout(function(){
-		$("#yjfk").css({"display":"none"});
-	});
-
-	$("#fix4").mouseover(function(){
-		$("#mfzx").css({"display":"block"});
-	});
-	$("#fix4").mouseout(function(){
-		$("#mfzx").css({"display":"none"});
-	});
-
-	$("#bigfix5").mouseover(function(){
-		$("#see").css({"display":"block"});
-	});
-	$("#bigfix5").mouseout(function(){
-		$("#see").css({"display":"none"});
-	});
-	
-//	回到顶部:
-	$(window).scroll(function(){
-		var $scrolls=document.documentElement.scrollTop || document.body.scrollTop;
-		if($scrolls>=402){
-			$(".fix .fix6").css({"display":"block"});		
-			$(".fix .fix6").click(function(){
-				document.documentElement.scrollTop=document.body.scrollTop=0;
-			});
-		}else{
-			$(".fix .fix6").css({"display":"none"});		
-		}			
-	});
+//	//滑过固定工具栏：
+//	$("#fix1").mouseover(function(){
+//		$("#download1").css({"display":"block"});
+//	});
+//	$("#fix1").mouseout(function(){
+//		$("#download1").css({"display":"none"});
+//	});
+//
+//	$("#fix2").mouseover(function(){
+//		$("#download2").css({"display":"block"});
+//	});
+//	$("#fix2").mouseout(function(){
+//		$("#download2").css({"display":"none"});
+//	});
+//
+//	$("#fix3").mouseover(function(){
+//		$("#yjfk").css({"display":"block"});
+//	});
+//	$("#fix3").mouseout(function(){
+//		$("#yjfk").css({"display":"none"});
+//	});
+//
+//	$("#fix4").mouseover(function(){
+//		$("#mfzx").css({"display":"block"});
+//	});
+//	$("#fix4").mouseout(function(){
+//		$("#mfzx").css({"display":"none"});
+//	});
+//
+//	$("#bigfix5").mouseover(function(){
+//		$("#see").css({"display":"block"});
+//	});
+//	$("#bigfix5").mouseout(function(){
+//		$("#see").css({"display":"none"});
+//	});
+//	
+////	回到顶部:
+//	$(window).scroll(function(){
+//		var $scrolls=document.documentElement.scrollTop || document.body.scrollTop;
+//		if($scrolls>=402){
+//			$(".fix .fix6").css({"display":"block"});		
+//			$(".fix .fix6").click(function(){
+//				document.documentElement.scrollTop=document.body.scrollTop=0;
+//			});
+//		}else{
+//			$(".fix .fix6").css({"display":"none"});		
+//		}			
+//	});
 	
 //	logo中我要卖车的input
 	$(".logo .right input").focus(function(){
