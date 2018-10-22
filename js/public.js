@@ -127,24 +127,19 @@ $(function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-//let xhr=XMLHTTPRequest();
-//
-//xhr.open("get"," .php",true);
-//
-//xhr.onreadystatechange=function(){
-//	if(xhr.readyState==4 && xhr.status==200){
-//		xhr.responseText;
-//	}
-//}
-//
-//xhr.send();
+	z("#getn").onblur=function(){
+		let xhr=XMLHttpRequest();
+		xhr.open("get","php/signIn.php?name="+this.value,true);
+		
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				let str=xhr.responseText;
+				if(str==1){
+					z("#true").innerHTML="该用户已被注册";
+				}else if(str==0){
+					z("#true").innerHTML="可以注册";
+				}
+			}
+		}
+		xhr.send();
+	}
