@@ -379,7 +379,7 @@
 					<li><img src="img/5516a1f36bef6301513da42f04a2b71e.png" alt="" /></li>
 					<li><img src="img/eba7f7b003a50483edc0e016abafc449.png" alt="" /></li>
 				</ul>
-				<a>立即申请</a>
+				<a class="aly" href="javascript:;">立即申请</a>
 			</div>
 		</div>
 	</div>
@@ -414,7 +414,7 @@
 <script type="text/javascript" src="js/tools.js"></script>
 <script type="text/javascript" src="js/public.js" ></script>
 <script type="text/javascript">
-window.onload=function(){
+$(function(){
 
 //	二维码fixed
 	$(".fixed").hover(
@@ -428,6 +428,12 @@ window.onload=function(){
 		}
 	);
 	
-}
+//	点击下面的立即申请 回到上面的立即申请
+	$(".aly").click(function(){
+		document.documentElement.scrollTop=document.documentElement.body=74;
+	});
+	
+	
+});
 </script>
 

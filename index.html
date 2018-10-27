@@ -637,20 +637,21 @@ window.onload=function(){
 			}else{
 				z("#true").innerHTML="请输入正确的手机号码";
 			}
-		}		
+		}
 	};	
 	
-	z("#getn").onblur=function(){ 
-		let xhr=XMLHttpRequest();
+	z("#phoneNum").onblur=function(){ 
+		let xhr=new XMLHttpRequest();
 		xhr.open("get","php/signIn.php?phoneNum="+this.value,true);
 		
 		xhr.onreadystatechange=function(){
 			if(xhr.readyState==4 && xhr.status==200){
 				let str=xhr.responseText;
 				if(str=="1"){
-					z("#true").innerHTML="该用户已被注册";
+					alert("登录成功！");
+//					z("#true").innerHTML="该用户已被注册";
 				}else if(str=="0"){
-					z("#true").innerHTML="可以注册";
+					z("#true").innerHTML="您还没有注册";
 				}
 			}
 		}

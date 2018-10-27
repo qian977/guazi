@@ -355,7 +355,6 @@
 					</div>
 				</div>
 			</li>-->
-			
 				
 		</ul>
 	</div>
@@ -503,54 +502,68 @@ $(function(){
 		async:true,
 		data:{},
 		success:function(data){
-			console.log(data);
-			for(let i=0;i<data.length;i++){		
-//				$clicksss();
-        let $childLi=$("<li class='liDom'></li>");
-//		$childLi.attr("class","liDom");
-		$childLi.attr("goodsid","00"+i);
-		$("#go").append($childLi);//把这个li放到大盒子里面
-		
-		let $childLiImg=$("<img src="+data[i].goodsImg+"/>");//这个ul下的li的是Img
-		$childLi.append($childLiImg);//把这个Img放到上面那个li里
-		
-		let $childLiDiv=$("<div class='tt'></div>");
-//		$childLiDiv.attr("class","tt");
-		$childLi.append($childLiDiv);//把这个Img放到上面那个li里
-		
-		let $childLiDivH5=$("<h5></h5>");
-		$childLiDivH5.html(data[i].goodsName);
-		$childLiDiv.append($childLiDivH5);
-		
-		let $childLiDivP=$("<p></p>");
-		$childLiDivP.html(data[i].goodsType);
-		$childLiDiv.append($childLiDivP);
-		
-		let $childLiDivDs=$("<div></div>");
-		$childLiDivDs.attr("class","money");
-		$childLiDiv.append($childLiDivDs);
-		
-		let $childLiDivDsSpan=$("<span></span>");
-		$childLiDivDsSpan.html(data[i].goodsPrice+"万");
-		$childLiDivDs.append($childLiDivDsSpan);
-		
-		let $childLiDivDsD1=$("<div></div>");
-		$childLiDivDsD1.attr("class","aa");
-		$childLiDivDs.append($childLiDivDsD1);
-		
-		let $childLiDivDsD1A=$("<a href=''></a>");
-		$childLiDivDsD1A.html(data[i].goodsCount);
-		$childLiDivDsD1A.attr("class","yxc");
-		$childLiDivDsD1.append($childLiDivDsD1A);
-		
-		let $childLiDivDsD1A2=$("<a href=''></a>");
-		$childLiDivDsD1A2.html(data[i].goodsDesc);
-		$childLiDivDsD1A2.attr("class","cz");
-		$childLiDivDsD1.append($childLiDivDsD1A2);
+//			console.log(data);
+			let link="";
+			for(let i=0;i<data.length;i++){
+				link+="<li class='liDom' title='"+data[i].goodsName+"'>\
+						<img src='"+data[i].goodsImg+"'/>\
+						<div class='tt'>\
+							<h5>"+data[i].goodsName+"</h5>\
+							<p>"+data[i].goodsType+"</p>\
+							<div class='money'>\
+								<span>"+data[i].goodsPrice+"万</span>\
+								<div class='aa'>\
+									<a class='yxc' href=''>"+data[i].beiyong1+"</a>\
+									<a class='cz' href=''>"+data[i].goodsDesc+"</a>\
+								</div>\
+							</div>\
+						</div>\
+					</li>";  
+					$("#go").html(link);
+				  
+				
+//		        let $childLi=$("<li class='liDom'  title='"+data[i].goodsName+"'></li>");
+//				$childLi.attr("goodsid","00"+i);
+//				$("#go").append($childLi);
+//				
+//				let $childLiImg=$("<img src='"+data[i].goodsImg+"'/>");
+//				$childLi.append($childLiImg);
+//				
+//				let $childLiDiv=$("<div class='tt'></div>");
+//				$childLi.append($childLiDiv);
+//				
+//				let $childLiDivH5=$("<h5></h5>");
+//				$childLiDivH5.html(data[i].goodsName);
+//				$childLiDiv.append($childLiDivH5);
+//				
+//				let $childLiDivP=$("<p></p>");
+//				$childLiDivP.html(data[i].goodsType);
+//				$childLiDiv.append($childLiDivP);
+//				
+//				let $childLiDivDs=$("<div></div>");
+//				$childLiDivDs.attr("class","money");
+//				$childLiDiv.append($childLiDivDs);
+//				
+//				let $childLiDivDsSpan=$("<span></span>");
+//				$childLiDivDsSpan.html(data[i].goodsPrice+"万");
+//				$childLiDivDs.append($childLiDivDsSpan);
+//				
+//				let $childLiDivDsD1=$("<div></div>");
+//				$childLiDivDsD1.attr("class","aa");
+//				$childLiDivDs.append($childLiDivDsD1);
+//				
+//				let $childLiDivDsD1A=$("<a href=''></a>");
+//				$childLiDivDsD1A.html(data[i].beiyong1);
+//				$childLiDivDsD1A.attr("class","yxc");
+//				$childLiDivDsD1.append($childLiDivDsD1A);
+//				
+//				let $childLiDivDsD1A2=$("<a href=''></a>");
+//				$childLiDivDsD1A2.html(data[i].goodsDesc);
+//				$childLiDivDsD1A2.attr("class","cz");
+//				$childLiDivDsD1.append($childLiDivDsD1A2);
 			};
 		},
 		dataType:"json"
-		
 	})
 	
 });

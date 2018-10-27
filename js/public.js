@@ -1,7 +1,7 @@
 
 
-
-$(function(){	
+//jquery:
+$(function(){
 	//signIn登录手机号验证
 	$("#getn").click(function(){
 		if($("#phoneNum").val()==""){
@@ -58,9 +58,10 @@ $(function(){
 			"borderRadius":"2px"
 		});
 		$("#bj").css({
-			"color":"#fff"
+			"color":"#000"
 		});
 		$("#uls").hide();
+		
 	});
 	
 	//点击登录signIn
@@ -127,19 +128,25 @@ $(function(){
 });
 
 
-	z("#getn").onblur=function(){
-		let xhr=XMLHttpRequest();
-		xhr.open("get","php/signIn.php?name="+this.value,true);
-		
-		xhr.onreadystatechange=function(){
-			if(xhr.readyState==4 && xhr.status==200){
-				let str=xhr.responseText;
-				if(str==1){
-					z("#true").innerHTML="该用户已被注册";
-				}else if(str==0){
-					z("#true").innerHTML="可以注册";
-				}
-			}
-		}
-		xhr.send();
-	}
+//原生:
+window.onload=function(){
+
+//	z("#phoneNum").onblur=function(){
+//		let xhr=new XMLHttpRequest();
+//		xhr.open("get","../php/signIn.php?name="+this.value,true);
+//		
+//		xhr.onreadystatechange=function(){
+//			if(xhr.readyState==4 && xhr.status==200){
+//				let str=xhr.responseText;
+//				if(str==1){
+//					z("#true").innerHTML="该用户已被注册";
+//				}else if(str==0){
+//					z("#true").innerHTML="可以注册";
+//				}
+//			}
+//		}
+//		xhr.send();
+//	}
+	
+	
+}

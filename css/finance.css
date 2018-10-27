@@ -12,7 +12,6 @@ img{
 	display: block;
 }
 body{
-	/*position: relative;*/
 	font-family: "微软雅黑";
 }
 ul,li{
@@ -44,6 +43,7 @@ header .title{
 	height:386px;
 	background:#fff;
 	border:1px solid #e6e6e6;
+	border-top:none;
 	padding-top:18px;
 	position: absolute;
 	left:79px;
@@ -59,6 +59,9 @@ header .title{
 }
 .title #uls ul:first-child{
 	border-bottom: 1px solid #e6e6e6;
+}
+.title #uls li{
+	
 }
 .title #uls li a{
 	float: left;
@@ -137,10 +140,20 @@ header .title{
 	border-left: 1px solid #333333;
 	padding-left:25px;
 }
+header .bigapply{
+	clear: both;
+}
 header .apply{
 	width:274px;
-	background: pink;
 	padding:20px;
+	background: #fff;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px 6px #f3f3f3;
+	border-radius: 4px;
+	margin-left:125px;
+	position: absolute;
+	left:-50px;
+	top:0px;
 }
 header .apply h4{
     height: 34px;
@@ -177,17 +190,6 @@ header .bigapply{
 	width:1100px;
 	position: relative;
 	margin:74px auto 0;
-}
-header .apply{
-	width:274px;
-	padding:20px;
-	background: #fff;
-	overflow: hidden;
-	box-shadow: 0px 0px 30px 6px #f3f3f3;
-	margin-left:125px;
-	position: absolute;
-	left:-50px;
-	top:0px;
 }
 header .apply h4{
     height: 34px;
